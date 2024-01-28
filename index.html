@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find and Replace</title>
+</head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 800px;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Gap between columns */
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Find and Replace</h1>
+  <form action="/submit" method="POST">
+    <label for="rword">Fir No:</label>
+    <input type="text" name="rword" required>
+
+    <label for="datee">Date:</label>
+    <input type="text" name="datee" required>
+
+    <label for="dated">Present Date:</label>
+    <input type="text" name="dated" required>
+
+    <label for="us">US:</label>
+    <input type="us" name="us" required>
+
+    <label for="Alias_namee">ALIAS_NAME:</label>
+    <input type="text" name="Alias_namee" required>
+    
+    <label for="Parentage_Arst">PARENTAGE_ARST:</label>
+    <input type="text" name="Parentage_Arst" required>
+    
+    <label for="Location_of_arrest">LOCATION_OF_ARREST:</label>
+    <input type="text" name="Location_of_arrest" required>
+    
+    <label for="permanentaddr">PERMANENT_ADDR:</label>
+    <input type="text" name="permanentaddr" required>
+   
+    <label for="Convey_Info">CONVEY_INFO:</label>
+    <input type="text" name="Convey_Info" required>
+    
+    <label for="Arrest_Info">ARREST_INFO:</label>
+    <input type="text" name="Arrest_Info" required>
+    
+    <label for="Case_Name">CASE_NAME:</label>
+    <input type="text" name="Case_Name" required>
+    
+    <label for="List_Injury">LIST_INJURY:</label>
+    <input type="text" name="List_Injury" required>
+    
+    <label for="List_Witn">LIST_WITN:</label>
+    <input type="text" name="List_Witn" required>
+    
+    <label for="Ord_Court">ORD_COURT:</label>
+    <input type="text" name="Ord_Court" required>
+    
+    <label for="ALIAS_FATHER_NAME">ALIAS_FATHER_NAME:</label>
+    <input type="text" name="ALIAS_FATHER_NAME" required>
+    
+    <label for="COMPANY_NAME">COMPANY_NAME:</label>
+    <input type="text" name="COMPANY_NAME" required>
+    
+    <label for="COMPANY_ADDRESS">COMPANY_ADDRESS:</label>
+    <input type="text" name="COMPANY_ADDRESS" required>
+    
+    <label for="RENT_OR_YOUR">RENT_OR_YOUR:</label>
+    <input type="text" name="RENT_OR_YOUR" required>
+    
+    <label for="NAME_OF_OWNER">NAME_OF_OWNER:</label>
+    <input type="text" name="NAME_OF_OWNER" required>
+    
+    <label for="DATE_JOINED">DATE_JOINED:</label>
+    <input type="text" name="DATE_JOINED" required>
+    
+    <label for="BANK_INFO">BANK_INFO:</label>
+    <input type="text" name="BANK_INFO" required>
+    
+    <label for="COMPANY_INFO">COMPANY_INFO:</label>
+    <input type="text" name="COMPANY_INFO" required>
+    
+    <label for="ASSOCIATE_LIST">ASSOCIATE_LIST:</label>
+    <input type="text" name="ASSOCIATE_LIST" required>
+    
+    <label for="LIST_BANKS">LIST_BANKS:</label>
+    <input type="text" name="LIST_BANKS" required>
+    
+    <label for="COMPANY_OUTSIDE_ACCOUNT">COMPANY_OUTSIDE_ACCOUNT:</label>
+    <input type="text" name="COMPANY_OUTSIDE_ACCOUNT" required>
+    
+    <label for="COMPANY_TRANSFER">COMPANY_TRANSFER:</label>
+    <input type="text" name="COMPANY_TRANSFER" required>
+    
+    <label for="COMPANY_TOLL_NO">COMPANY_TOLL_NO:</label>
+    <input type="text" name="COMPANY_TOLL_NO" required>
+    
+    <label for="COMPANY_WEBSITE">COMPANY_WEBSITE:</label>
+    <input type="text" name="COMPANY_WEBSITE" required>
+    
+    <label for="ALIAS_PAN">ALIAS_PAN:</label>
+    <input type="text" name="ALIAS_PAN" required>
+    
+    <label for="COMPANY_SALARY_INFO">COMPANY_SALARY_INFO:</label>
+    <input type="text" name="COMPANY_SALARY_INFO" required>
+    
+    <label for="COMPANY_SALARY_OUTSIDE_INFO">COMPANY_SALARY_OUTSIDE_INFO:</label>
+    <input type="text" name="COMPANY_SALARY_OUTSIDE_INFO" required>
+    
+    <label for="COMPANY_ISP_INFO">COMPANY_ISP_INFO:</label>
+    <input type="text" name="COMPANY_ISP_INFO" required>
+    
+    <label for="COMPANY_CLIENT_INFO">COMPANY_CLIENT_INFO:</label>
+    <input type="text" name="COMPANY_CLIENT_INFO" required>
+    
+    <label for="HOSP_NAME">HOSP_NAME:</label>
+    <input type="text" name="HOSP_NAME" required>
+    
+    <label for="CONST_NAME">CONST_NAME:</label>
+    <input type="text" name="CONST_NAME" required>
+    
+    <label for="AGE">AGE:</label>
+    <input type="text" name="AGE" required>
+
+    <label for="ALIAS_POSSESION">ALIAS_POSSESION:</label>
+    <input type="text" name="ALIAS_POSSESION" required>
+    
+
+    <label for="OFFICER_1">OFFICER_1:</label>
+    <input type="text" name="OFFICER_1" required>
+    
+    <label for="OFFICER_2">OFFICER_2:</label>
+    <input type="text" name="OFFICER_2" required>
+    
+    <label for="VISITING_TO">VISITING_TO:</label>
+    <input type="text" name="VISITING_TO" required>
+    
+    <label for="DATE_OF_SEIZURE">DATE_OF_SEIZURE:</label>
+    <input type="text" name="DATE_OF_SEIZURE" required>
+    
+    <label for="TIME_OF_SEIZURE">TIME_OF_SEIZURE:</label>
+    <input type="text" name="TIME_OF_SEIZURE" required>
+    
+    <label for="LOCATION_SEIZE">LOCATION_SEIZE:</label>
+    <input type="text" name="LOCATION_SEIZE" required>
+    
+    <label for="PERSON_SUBMIT_DATA">PERSON_SUBMIT_DATA:</label>
+    <input type="text" name="PERSON_SUBMIT_DATA" required>
+    
+    <label for="PERSON_RECEIVING_DATA">PERSON_RECEIVING_DATA:</label>
+    <input type="text" name="PERSON_RECEIVING_DATA" required>
+
+    
+    <label for="LIST_OF_SEIZED_ITEMS">LIST_OF_SEIZED_ITEMS:</label>
+    <input type="text" name="LIST_OF_SEIZED_ITEMS" required>
+    
+
+
+
+    
+  
+
+    <label for="language">Select a form to download :</label>
+    <select name="language" id="language">
+      <option value="Arrest_memo.docx">Arrest_memo.docx</option>
+      <option value="body_inspection_memo.docx" >body_inspection_memo.docx</option>
+      <option value="CONVICTION_SLIP.docx">CONVICTION_SLIP.docx</option>
+      <option value="Interrogation_of_accused.docx">Interrogation_of_accused.docx</option>
+      <option value="Medical.docx">Medical.docx</option>
+      <option value="personal_search.docx">personal_search.docx</option>
+      <option value="police assistant nws.docx">police assistant nws.docx</option>
+      <option value="Seizure memo.docx">Seizure memo.docx</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</body>
+
+</html>
